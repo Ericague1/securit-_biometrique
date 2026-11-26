@@ -413,3 +413,9 @@ x + (x - 120) = 160
 2x = 280
 x = 280 / 2
 x = 140
+
+
+**Bilan de la répartition :**
+- La **chambre d'hôtel** représente la part majoritaire du budget avec un coût de **140 €**.
+- Le **petit-déjeuner** constitue la part restante avec un coût de **20 €**.
+- Le **total** respecte parfaitement la contrainte initiale de **160 €**.
