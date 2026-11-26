@@ -386,7 +386,7 @@ Lien : https://lucid.app/lucidchart/c9e47aa7-dc15-48bb-8596-aa35e5350867/edit?vi
 - Une chambre d'hôtel et un petit-déjeuner coûtent ensemble **160 €**.
 - Le petit-déjeuner coûte **120 € de moins** que la chambre d'hôtel.
 
-**Objectif :** Déterminer le prix exact de la chambre d'hôtel et celui du petit-déjeuner (répartition quantifiée).
+**Objectif :** Déterminons le prix exact de la chambre d'hôtel et celui du petit-déjeuner (répartition quantifiée).
 
 
 
