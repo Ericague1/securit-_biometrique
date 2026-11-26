@@ -372,3 +372,45 @@ Lien : https://lucid.app/lucidchart/c9e47aa7-dc15-48bb-8596-aa35e5350867/edit?vi
 ### DIAGRAMME DES COMPOSANTS
 
 Lien : https://lucid.app/lucidchart/c9e47aa7-dc15-48bb-8596-aa35e5350867/edit?viewport_loc=-269%2C-850%2C2100%2C1111%2CO.aQn.BFlj91&invitationId=inv_c2bdfd24-8b0b-4c9b-a895-117921cf5510
+
+
+
+
+
+
+# 🏨 Résolution du problème : Chambre d'hôtel et Petit-déjeuner
+
+Cette section présente la résolution mathématique et la répartition quantifiée du coût d'une chambre d'hôtel et de son petit-déjeuner, à partir des données de l'énoncé.
+
+## 📌 Énoncé du problème
+
+- Une chambre d'hôtel et un petit-déjeuner coûtent ensemble **160 €**.
+- Le petit-déjeuner coûte **120 € de moins** que la chambre d'hôtel.
+
+**Objectif :** Déterminer le prix exact de la chambre d'hôtel et celui du petit-déjeuner (répartition quantifiée).
+
+---
+
+## 🧮 Résolution mathématique
+
+Pour résoudre ce problème, nous allons poser un système d'équations à deux inconnues.
+
+### 1. Définition des variables
+- Soit **`x`** le prix de la **chambre d'hôtel** (en euros).
+- Soit **`y`** le prix du **petit-déjeuner** (en euros).
+
+### 2. Mise en équation
+D'après l'énoncé, nous pouvons écrire les deux équations suivantes :
+1. Le coût total est de 160 € : **`x + y = 160`**
+2. Le petit-déjeuner coûte 120 € de moins que la chambre : **`y = x - 120`**
+
+### 3. Résolution par substitution
+Nous remplaçons `y` par sa valeur (`x - 120`) dans la première équation :
+
+```text
+x + (x - 120) = 160
+2x - 120 = 160
+2x = 160 + 120
+2x = 280
+x = 280 / 2
+x = 140
