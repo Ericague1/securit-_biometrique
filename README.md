@@ -32,7 +32,6 @@ Les besoins fonctionnels décrivent les différentes opérations que le système
 | **BF5** | Le système doit autoriser ou refuser le démarrage du moteur en fonction du résultat de l'authentification biométrique. |
 | **BF6** | Le système doit enregistrer chaque tentative de démarrage en précisant la date, l'heure et le résultat de l'opération. |
 | **BF7** | Le système doit permettre à un administrateur de gérer les utilisateurs et leurs empreintes digitales. |
-
 | **BF8** | Le système doit déclencher une alerte en cas de tentatives répétées de démarrage échouées, pouvant indiquer une tentative de vol. |
 
 ---
