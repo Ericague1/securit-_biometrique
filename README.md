@@ -51,7 +51,6 @@ Ces deux éléments constituent une base essentielle pour la réalisation des di
 ## 1.3 Identification des besoins non fonctionnels (BNF)
 ### Code	Besoin non fonctionnel
 
-## 1.4 Identification des besoins non fonctionnels (BNF)
 
 Les besoins non fonctionnels définissent les critères de qualité, de performance et de sécurité que le système doit respecter pour garantir son bon fonctionnement et offrir une expérience satisfaisante aux utilisateurs.
 
@@ -103,7 +102,7 @@ Cette partie regroupe les composants électroniques essentiels au fonctionnement
 
 
 
-## 2. 📡 Composants optionnels mais très pertinents pour le contexte UNSTIM
+##  📡 Composants optionnels mais très pertinents pour le contexte UNSTIM
 
 Ces composants ne sont pas obligatoires pour réaliser une première version fonctionnelle du dispositif. Cependant, ils apportent des fonctionnalités supplémentaires particulièrement intéressantes dans le cadre de la lutte contre le vol de motos.
 
@@ -114,14 +113,14 @@ Ces composants ne sont pas obligatoires pour réaliser une première version fon
 
 
 
-## 3. 💻 Côté gestion : administration et supervision
+## . 💻 Côté gestion : administration et supervision
 
 Au-delà du dispositif électronique installé sur la moto, le projet nécessite une solution de gestion permettant de centraliser les informations et de contrôler les accès.
 
 | **Composant** | **Rôle concret** | **Pourquoi est-il nécessaire ?** |
 |---|---|---|
 | **Ordinateur / Serveur local** | Stocke la base de données des étudiants, des motos et des empreintes de référence. Permet d'enregistrer les nouveaux utilisateurs et de consulter l'historique des démarrages. | Le projet inclut une dimension administrative. Il faut donc un espace centralisé pour gérer les inscriptions et vérifier les autorisations. |
-| **Logiciel / Application de gestion** | Propose une interface permettant à l'administrateur d'ajouter ou de supprimer un étudiant, d'enregistrer une empreinte et de consulter les journaux d'activité (*logs*). | Sans interface, la gestion des utilisateurs serait manuelle et peu fiable. Cette application rend le système plus pratique et exploitable à l'échelle de l'ESTIM. |
+| **Logiciel / Application de gestion** | Propose une interface permettant à l'administrateur d'ajouter ou de supprimer un étudiant, d'enregistrer une empreinte et de consulter les journaux d'activité (*logs*). | Sans interface, la gestion des utilisateurs serait manuelle et peu fiable. Cette application rend le système plus pratique et exploitable à l'échelle de l'UNSTIM. |
 
 
 
