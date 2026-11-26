@@ -149,3 +149,78 @@ Le système fonctionne suivant une succession d'étapes :
 | Gestion et administration | Ordinateur ou serveur local, logiciel ou application de gestion |
 
 **Remarque :** Les composants optionnels peuvent être intégrés progressivement selon le budget et les objectifs de la compétition. Le montage électrique réel devra être conçu et testé avec des protections adaptées, notamment pour isoler les circuits électroniques de la moto et éviter toute intervention dangereuse sur son système d'allumage.
+
+
+# 🔐 Scénario complet du projet de démarrage biométrique
+
+Ce document présente le fonctionnement global du système de sécurisation des motos par démarrage biométrique, depuis son installation jusqu'à sa maintenance.
+
+Le scénario est organisé en six phases. Chaque phase décrit deux aspects complémentaires :
+
+- **En avant :** les actions visibles réalisées par les utilisateurs.
+- **En arrière :** les opérations techniques exécutées automatiquement par le système.
+
+
+
+## ⚙️ PHASE 0 — Installation et préparation du système
+
+### 👤 En avant : actions de l'administrateur
+
+1. L'administrateur installe sur la moto les composants électroniques suivants :
+   - Capteur d'empreinte digitale ;
+   - Microcontrôleur ;
+   - Module relais ;
+   - Régulateur de tension ;
+   - Buzzer et LED ;
+   - Module GSM (optionnel).
+2. Il procède au raccordement du dispositif au circuit d'autorisation du démarrage, conformément aux spécifications électriques de la moto.
+3. Il alimente le système à partir de la batterie de 12 V de la moto, avec un régulateur permettant d'obtenir une alimentation stable de 5 V pour les composants électroniques.
+
+### 💻 En arrière : fonctionnement interne
+
+- Le régulateur **stabilise la tension** afin de protéger l'Arduino et le capteur biométrique.
+- Le microcontrôleur **initialise ses périphériques** et vérifie leur disponibilité.
+- Le relais est **maintenu ouvert par défaut** : aucun démarrage n'est autorisé sans authentification.
+- Le système passe en **état d'attente** et affiche le message : « Système prêt ».
+
+
+
+## 📝 PHASE 1 — Enrôlement de l'étudiant et de son empreinte
+
+### 👤 En avant : actions de l'étudiant et de l'administrateur
+
+1. L'étudiant se présente auprès de l'administrateur avec sa moto et sa carte d'étudiant.
+2. L'administrateur crée le **profil de l'étudiant** en renseignant les informations suivantes :
+   - Nom ;
+   - Prénom ;
+   - Filière ;
+   - Numéro d'immatriculation de la moto.
+3. L'étudiant pose son doigt sur le capteur biométrique deux à trois fois afin de permettre l'enregistrement de son empreinte de référence.
+4. Le système affiche un message de confirmation : **« Empreinte enregistrée avec succès »**.
+
+### 💻 En arrière : fonctionnement interne
+
+- Le capteur **capture l'image de l'empreinte** et la convertit en un modèle numérique appelé *template*.
+- Le template est **protégé par un mécanisme de chiffrement** avant son stockage.
+- L'empreinte enregistrée est **associée à l'identifiant de la moto** autorisée.
+- Un **journal d'enrôlement** est créé avec les informations suivantes :
+  - Date ;
+  - Heure ;
+  - Identité de l'opérateur responsable de l'enregistrement.
+
+> ⚠️ **Exigence de sécurité :** l'image brute de l'empreinte ne doit pas être conservée. Seul le modèle biométrique de référence, protégé de manière appropriée, doit être stocké.
+
+
+
+## 🟢 PHASE 2 — Démarrage normal (scénario nominal)
+
+Cette phase décrit le fonctionnement du système lorsqu'un étudiant autorisé tente de démarrer sa moto.
+
+### 👤 En avant : actions de l'étudiant
+
+1. L'étudiant pose son doigt sur le capteur biométrique.
+2. La LED **orange** s'allume pour indiquer : « Vérification en cours… ».
+3. En moins de deux secondes, si l'empreinte est reconnue, la LED **verte** s'allume et affiche : « Accès autorisé ».
+4. L'étudiant utilise la commande
+
+
