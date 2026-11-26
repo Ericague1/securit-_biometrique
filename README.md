@@ -51,13 +51,35 @@ Ces deux éléments constituent une base essentielle pour la réalisation des di
 ## 1.3 Identification des besoins non fonctionnels (BNF)
 ### Code	Besoin non fonctionnel
 
-BNF1	Sécurité : les empreintes doivent être chiffrées et stockées de façon sécurisée
-BNF2	Performance : la vérification biométrique doit prendre moins de 2 secondes
-BNF3	Fiabilité : taux de reconnaissance supérieur à 99 %
-BNF4	Disponibilité : le système doit fonctionner 24h/24
-BNF5	Ergonomie : utilisation simple et rapide pour l'étudiant
-BNF6	Traçabilité : conserver l'historique des démarrages pendant au moins 12 mois
-BNF7	Portabilité : le système doit s'adapter à différents modèles de motos
+## 1.4 Identification des besoins non fonctionnels (BNF)
+
+Les besoins non fonctionnels définissent les critères de qualité, de performance et de sécurité que le système doit respecter pour garantir son bon fonctionnement et offrir une expérience satisfaisante aux utilisateurs.
+
+| **Code** | **Besoin non fonctionnel** | **Description** |
+|---|---|---|
+| **BNF1** | **Sécurité** | Les empreintes digitales doivent être chiffrées et stockées de manière sécurisée afin de protéger les données biométriques des utilisateurs. |
+| **BNF2** | **Performance** | La vérification biométrique doit être effectuée en moins de 2 secondes. |
+| **BNF3** | **Fiabilité** | Le système doit atteindre un taux de reconnaissance supérieur à 99 %. |
+| **BNF4** | **Disponibilité** | Le système doit être opérationnel 24 heures sur 24 afin de permettre aux étudiants de démarrer leur moto à tout moment. |
+| **BNF5** | **Ergonomie** | Le système doit être simple, intuitif et rapide à utiliser pour l'étudiant. |
+| **BNF6** | **Traçabilité** | Le système doit conserver l'historique des démarrages pendant une durée minimale de 12 mois. |
+| **BNF7** | **Portabilité** | Le système doit pouvoir être adapté à différents modèles de motos. |
+
+
+
+### 📌 Synthèse
+
+Les besoins non fonctionnels définissent les exigences de qualité auxquelles le système doit répondre. Ils permettent de garantir :
+
+- **La sécurité** des données biométriques ;
+- **La rapidité** de l'authentification ;
+- **La fiabilité** de la reconnaissance des empreintes ;
+- **La disponibilité** permanente du dispositif ;
+- **La simplicité** d'utilisation ;
+- **La traçabilité** des tentatives de démarrage ;
+- **L'adaptabilité** à différents modèles de motos.
+
+Ces exigences serviront de critères de référence lors de la conception, du développement et des tests du système de sécurisation des motos par démarrage biométrique.
 
 
 
