@@ -162,7 +162,7 @@ Le scénario est organisé en six phases. Chaque phase décrit deux aspects comp
 
 
 
-## ⚙️ PHASE 0 — Installation et préparation du système
+## ⚙️ PHASE 0  Installation et préparation du système
 
 ### 👤 En avant : actions de l'administrateur
 
@@ -185,7 +185,7 @@ Le scénario est organisé en six phases. Chaque phase décrit deux aspects comp
 
 ---
 
-## 📝 PHASE 1 — Enrôlement de l'étudiant et de son empreinte
+## 📝 PHASE 1  Enrôlement de l'étudiant et de son empreinte
 
 ### 👤 En avant : actions de l'étudiant et de l'administrateur
 
@@ -212,7 +212,7 @@ Le scénario est organisé en six phases. Chaque phase décrit deux aspects comp
 
 
 
-## 🟢 PHASE 2 — Démarrage normal (scénario nominal)
+## 🟢 PHASE 2  Démarrage normal (scénario nominal)
 
 Cette phase décrit le fonctionnement du système lorsqu'un étudiant autorisé tente de démarrer sa moto.
 
@@ -236,7 +236,7 @@ Cette phase décrit le fonctionnement du système lorsqu'un étudiant autorisé 
 
 
 
-## 🔴 PHASE 3 — Tentative non autorisée (scénario d'échec)
+## 🔴 PHASE 3  Tentative non autorisée (scénario d'échec)
 
 Cette phase décrit le comportement du système lorsqu'une personne non autorisée tente de démarrer la moto.
 
