@@ -352,3 +352,15 @@ L'ensemble de ces mécanismes vise à renforcer la sécurité des motos au sein 
 ### DIAGRAMME DE CAS D'UTILISATION
 
 Lien : https://lucid.app/lucidchart/e7e5cc29-fe05-45e2-a3f6-14375db797c5/edit?viewport_loc=-163%2C-493%2C2503%2C1324%2C0_0&invitationId=inv_7edd8a80-372d-4e33-b65c-ab3c8caf4631
+
+
+### DIAGRAMME DE CLASSE
+
+
+Lien : https://lucid.app/lucidchart/e7e5cc29-fe05-45e2-a3f6-14375db797c5/edit?viewport_loc=212%2C2077%2C1643%2C870%2CSc.PLwcJTw1a&invitationId=inv_7edd8a80-372d-4e33-b65c-ab3c8caf4631
+
+
+
+### DIAGRAMME DE SEQUENCE
+
+Lien : 
