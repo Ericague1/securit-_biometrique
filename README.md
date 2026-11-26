@@ -364,3 +364,7 @@ Lien : https://lucid.app/lucidchart/e7e5cc29-fe05-45e2-a3f6-14375db797c5/edit?vi
 ### DIAGRAMME DE SEQUENCE
 
 Lien : [https://lucid.app/lucidchart/e7e5cc29-fe05-45e2-a3f6-14375db797c5/edit?view_items=HO0T5TUakTFgLnJnfnpRyzsfmX4%3D&page=fz~POoDHk6bI&invitationId=inv_7edd8a80-372d-4e33-b65c-ab3c8caf4631](https://lucid.app/lucidchart/6abed71a-78b9-428f-8e0a-0333368eca06/edit?viewport_loc=4771%2C2136%2C2818%2C1192%2C0_0&invitationId=inv_7cc0d4c7-0366-4caf-b021-af22f1c7c41a)
+
+
+### DIAGRAMME D'ACTIVITE
+Lien : https://lucid.app/lucidchart/c9e47aa7-dc15-48bb-8596-aa35e5350867/edit?viewport_loc=-2321%2C-581%2C8093%2C4283%2C0_0&invitationId=inv_c2bdfd24-8b0b-4c9b-a895-117921cf5510
