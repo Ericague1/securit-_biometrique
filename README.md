@@ -148,4 +148,4 @@ Le système fonctionne suivant une succession d'étapes :
 | Composants optionnels | Module GSM, écran LCD ou OLED |
 | Gestion et administration | Ordinateur ou serveur local, logiciel ou application de gestion |
 
-> **Remarque :** Les composants optionnels peuvent être intégrés progressivement selon le budget et les objectifs de la compétition. Le montage électrique réel devra être conçu et testé avec des protections adaptées, notamment pour isoler les circuits électroniques de la moto et éviter toute intervention dangereuse sur son système d'allumage.
+**Remarque :** Les composants optionnels peuvent être intégrés progressivement selon le budget et les objectifs de la compétition. Le montage électrique réel devra être conçu et testé avec des protections adaptées, notamment pour isoler les circuits électroniques de la moto et éviter toute intervention dangereuse sur son système d'allumage.
