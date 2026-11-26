@@ -48,8 +48,8 @@ Ces deux éléments constituent une base essentielle pour la réalisation des di
 - Le diagramme d'activités ;
 - Le diagramme de composants.
 
-## 1.3 Identification des besoins non fonctionnels (BNF)
-### Code	Besoin non fonctionnel
+### 1.3 Identification des besoins non fonctionnels (BNF)
+#### Code	Besoin non fonctionnel
 
 
 Les besoins non fonctionnels définissent les critères de qualité, de performance et de sécurité que le système doit respecter pour garantir son bon fonctionnement et offrir une expérience satisfaisante aux utilisateurs.
@@ -88,7 +88,7 @@ Ces exigences serviront de critères de référence lors de la conception, du d�
 
 
 
-##  🔧 Le cœur du dispositif embarqué sur la moto
+###  🔧 Le cœur du dispositif embarqué sur la moto
 
 Cette partie regroupe les composants électroniques essentiels au fonctionnement du système. Ils permettent d'identifier l'utilisateur, de vérifier son identité et d'autoriser ou de bloquer le démarrage de la moto.
 
@@ -102,7 +102,7 @@ Cette partie regroupe les composants électroniques essentiels au fonctionnement
 
 
 
-##  📡 Composants optionnels mais très pertinents pour le contexte UNSTIM
+### 📡 Composants optionnels mais très pertinents pour le contexte UNSTIM
 
 Ces composants ne sont pas obligatoires pour réaliser une première version fonctionnelle du dispositif. Cependant, ils apportent des fonctionnalités supplémentaires particulièrement intéressantes dans le cadre de la lutte contre le vol de motos.
 
@@ -113,7 +113,7 @@ Ces composants ne sont pas obligatoires pour réaliser une première version fon
 
 
 
-## . 💻 Côté gestion : administration et supervision
+### . 💻 Côté gestion : administration et supervision
 
 Au-delà du dispositif électronique installé sur la moto, le projet nécessite une solution de gestion permettant de centraliser les informations et de contrôler les accès.
 
@@ -124,7 +124,7 @@ Au-delà du dispositif électronique installé sur la moto, le projet nécessite
 
 
 
-## 4. ⚙️ Principe général de fonctionnement
+### 4. ⚙️ Principe général de fonctionnement
 
 Le système fonctionne suivant une succession d'étapes :
 
@@ -140,7 +140,7 @@ Le système fonctionne suivant une succession d'étapes :
 
 
 
-## 5. 📋 Synthèse des composants
+### 5. 📋 Synthèse des composants
 
 | **Catégorie** | **Composants** |
 |---|---|
@@ -151,7 +151,7 @@ Le système fonctionne suivant une succession d'étapes :
 **Remarque :** Les composants optionnels peuvent être intégrés progressivement selon le budget et les objectifs de la compétition. Le montage électrique réel devra être conçu et testé avec des protections adaptées, notamment pour isoler les circuits électroniques de la moto et éviter toute intervention dangereuse sur son système d'allumage.
 
 
-# 🔐 Scénario complet du projet de démarrage biométrique
+## 🔐 Scénario complet du projet de démarrage biométrique
 
 Ce document présente le fonctionnement global du système de sécurisation des motos par démarrage biométrique, depuis son installation jusqu'à sa maintenance.
 
@@ -162,9 +162,9 @@ Le scénario est organisé en six phases. Chaque phase décrit deux aspects comp
 
 
 
-## ⚙️ PHASE 0  Installation et préparation du système
+### ⚙️ PHASE 0  Installation et préparation du système
 
-### 👤 En avant : actions de l'administrateur
+#### 👤 En avant : actions de l'administrateur
 
 1. L'administrateur installe sur la moto les composants électroniques suivants :
    - Capteur d'empreinte digitale ;
@@ -176,18 +176,17 @@ Le scénario est organisé en six phases. Chaque phase décrit deux aspects comp
 2. Il procède au raccordement du dispositif au circuit d'autorisation du démarrage, conformément aux spécifications électriques de la moto.
 3. Il alimente le système à partir de la batterie de 12 V de la moto, avec un régulateur permettant d'obtenir une alimentation stable de 5 V pour les composants électroniques.
 
-### 💻 En arrière : fonctionnement interne
+#### 💻 En arrière : fonctionnement interne
 
 - Le régulateur **stabilise la tension** afin de protéger l'Arduino et le capteur biométrique.
 - Le microcontrôleur **initialise ses périphériques** et vérifie leur disponibilité.
 - Le relais est **maintenu ouvert par défaut** : aucun démarrage n'est autorisé sans authentification.
 - Le système passe en **état d'attente** et affiche le message : « Système prêt ».
 
----
 
-## 📝 PHASE 1  Enrôlement de l'étudiant et de son empreinte
+### 📝 PHASE 1  Enrôlement de l'étudiant et de son empreinte
 
-### 👤 En avant : actions de l'étudiant et de l'administrateur
+#### 👤 En avant : actions de l'étudiant et de l'administrateur
 
 1. L'étudiant se présente auprès de l'administrateur avec sa moto et sa carte d'étudiant.
 2. L'administrateur crée le **profil de l'étudiant** en renseignant les informations suivantes :
@@ -198,7 +197,7 @@ Le scénario est organisé en six phases. Chaque phase décrit deux aspects comp
 3. L'étudiant pose son doigt sur le capteur biométrique deux à trois fois afin de permettre l'enregistrement de son empreinte de référence.
 4. Le système affiche un message de confirmation : **« Empreinte enregistrée avec succès »**.
 
-### 💻 En arrière : fonctionnement interne
+#### 💻 En arrière : fonctionnement interne
 
 - Le capteur **capture l'image de l'empreinte** et la convertit en un modèle numérique appelé *template*.
 - Le template est **protégé par un mécanisme de chiffrement** avant son stockage.
@@ -212,11 +211,11 @@ Le scénario est organisé en six phases. Chaque phase décrit deux aspects comp
 
 
 
-## 🟢 PHASE 2  Démarrage normal (scénario nominal)
+### 🟢 PHASE 2  Démarrage normal (scénario nominal)
 
 Cette phase décrit le fonctionnement du système lorsqu'un étudiant autorisé tente de démarrer sa moto.
 
-### 👤 En avant : actions de l'étudiant
+#### 👤 En avant : actions de l'étudiant
 
 1. L'étudiant pose son doigt sur le capteur biométrique.
 2. La LED **orange** s'allume pour indiquer : « Vérification en cours… ».
@@ -224,7 +223,7 @@ Cette phase décrit le fonctionnement du système lorsqu'un étudiant autorisé 
 4. L'étudiant utilise la commande normale de démarrage de la moto.
 5. Le moteur démarre et l'étudiant peut partir.
 
-### 💻 En arrière : fonctionnement interne
+#### 💻 En arrière : fonctionnement interne
 
 - Le capteur **capture la nouvelle empreinte** et génère un template.
 - Le microcontrôleur **compare le template capturé** au template de référence enregistré.
@@ -236,11 +235,11 @@ Cette phase décrit le fonctionnement du système lorsqu'un étudiant autorisé 
 
 
 
-## 🔴 PHASE 3  Tentative non autorisée (scénario d'échec)
+### 🔴 PHASE 3  Tentative non autorisée (scénario d'échec)
 
 Cette phase décrit le comportement du système lorsqu'une personne non autorisée tente de démarrer la moto.
 
-### 👤 En avant : actions et réactions visibles
+#### 👤 En avant : actions et réactions visibles
 
 1. Une personne non autorisée pose son doigt sur le capteur ou tente d'utiliser le contacteur sans autorisation.
 2. La LED **rouge** s'allume et affiche : « Accès refusé ».
@@ -248,7 +247,7 @@ Cette phase décrit le comportement du système lorsqu'une personne non autoris�
 4. Le système refuse l'autorisation de démarrage.
 5. Après trois tentatives infructueuses, le système passe en **mode alerte**.
 
-### 💻 En arrière : fonctionnement interne
+#### 💻 En arrière : fonctionnement interne
 
 - Le template capturé **ne correspond pas** au template de référence.
 - Le microcontrôleur **maintient le relais ouvert** afin de refuser l'autorisation de démarrage.
@@ -268,11 +267,11 @@ Lorsque le nombre maximal de tentatives échouées est atteint :
 
 
 
-## 🖥️ PHASE 4 : Consultation et supervision (côté administrateur)
+### 🖥️ PHASE 4 : Consultation et supervision (côté administrateur)
 
 Cette phase permet à l'administrateur de surveiller le fonctionnement du dispositif et de consulter les activités enregistrées.
 
-### 👤 En avant : actions de l'administrateur
+#### 👤 En avant : actions de l'administrateur
 
 1. L'administrateur ouvre l'**application de gestion**.
 2. Il consulte l'**historique des démarrages** selon différents critères :
@@ -285,7 +284,7 @@ Cette phase permet à l'administrateur de surveiller le fonctionnement du dispos
    - Réinitialiser un compteur de tentatives échouées ;
    - Consulter les alertes générées par le système.
 
-### 💻 En arrière : fonctionnement interne
+#### 💻 En arrière : fonctionnement interne
 
 - Les journaux stockés sur le microcontrôleur sont **synchronisés** avec la base de données centrale à travers un support adapté : USB, carte SD ou GSM.
 - L'application **centralise et analyse les données**, notamment :
@@ -296,11 +295,11 @@ Cette phase permet à l'administrateur de surveiller le fonctionnement du dispos
 
 
 
-## 🔧 PHASE 5 : Maintenance et évaluation (fin de cycle)
+### 🔧 PHASE 5 : Maintenance et évaluation (fin de cycle)
 
 Cette dernière phase concerne l'entretien du dispositif, l'amélioration de ses performances et l'évaluation des résultats obtenus.
 
-### 👤 En avant : actions de maintenance
+#### 👤 En avant : actions de maintenance
 
 L'administrateur ou le technicien responsable peut :
 
@@ -348,3 +347,9 @@ Le système de démarrage biométrique repose sur une interaction entre trois é
 3. **Le système de gestion :** il centralise les informations, assure la supervision et conserve l'historique des activités.
 
 L'ensemble de ces mécanismes vise à renforcer la sécurité des motos au sein de l'ESTIM, à réduire les risques de vol et à garantir une meilleure traçabilité des tentatives de démarrage.
+
+## MODELISATION
+
+### DIAGRAMME DE CAS D'UTILISATION
+
+Lien : https://lucid.app/lucidchart/e7e5cc29-fe05-45e2-a3f6-14375db797c5/edit?viewport_loc=-163%2C-493%2C2503%2C1324%2C0_0&invitationId=inv_7edd8a80-372d-4e33-b65c-ab3c8caf4631
