@@ -1,10 +1,10 @@
-# securit-_biometrique
+ # 🔐 Système de sécurisation des motos par démarrage biométrique
 
-1.1 Contexte du projet
-L'ESTIM (École Supérieure de Technologie et de Management) a enregistré, en janvier 2026, 4 cas de vol de moto sur son campus. Face à cette insécurité, la présidente de l'assemblée des étudiants a lancé une compétition visant à concevoir un projet de sécurité des motos via un démarrage biométrique.
+## 1.1 Contexte du projet
+L'*UNSTIM* a enregistré, en janvier 2026, 4 cas de vol de moto sur son campus. Face à cette insécurité, la présidente de l'assemblée des étudiants a lancé une compétition visant à concevoir un projet de sécurité des motos via un démarrage biométrique.
 
 ## Analyse et identification des besoins
-###  1.2 Identification des acteurs
+##   Identification des acteurs
 Acteur	Rôle
 Étudiant / Propriétaire de moto	Utilisateur principal ; enregistre son empreinte, démarre sa moto
 Présidente de l'assemblée des étudiants	Initiatrice du projet et de la compétition ; valide les projets
@@ -40,9 +40,9 @@ BNF7	Portabilité : le système doit s'adapter à différents modèles de motos
 
 
 
- # 🔐 Système de sécurisation des motos par démarrage biométrique
 
-## 1. 🔧 Le cœur du dispositif embarqué sur la moto
+
+##  🔧 Le cœur du dispositif embarqué sur la moto
 
 Cette partie regroupe les composants électroniques essentiels au fonctionnement du système. Ils permettent d'identifier l'utilisateur, de vérifier son identité et d'autoriser ou de bloquer le démarrage de la moto.
 
@@ -54,9 +54,9 @@ Cette partie regroupe les composants électroniques essentiels au fonctionnement
 | **Régulateur de tension** (ou convertisseur DC-DC) | Abaisse la tension de la batterie 12 V de la moto vers une tension stable de 5 V pour alimenter l'Arduino et le capteur. | Il protège les composants électroniques contre les variations de tension du système électrique de la moto. |
 | **Buzzer / LED d'état** | Émet un signal sonore ou lumineux pour indiquer si l'accès est autorisé (vert) ou refusé (rouge). | Offre un retour immédiat à l'utilisateur. Le buzzer peut également signaler une tentative suspecte. |
 
----
 
-## 2. 📡 Composants optionnels mais très pertinents pour le contexte ESTIM
+
+## 2. 📡 Composants optionnels mais très pertinents pour le contexte UNSTIM
 
 Ces composants ne sont pas obligatoires pour réaliser une première version fonctionnelle du dispositif. Cependant, ils apportent des fonctionnalités supplémentaires particulièrement intéressantes dans le cadre de la lutte contre le vol de motos.
 
@@ -65,7 +65,7 @@ Ces composants ne sont pas obligatoires pour réaliser une première version fon
 | **Module GSM** (ex. SIM800L) | Envoie un SMS au propriétaire ou à l'administrateur en cas de tentative de démarrage non autorisée. | Le projet vise à lutter contre le vol. Le propriétaire peut ainsi être alerté à distance, même lorsqu'il n'est pas à proximité de sa moto. |
 | **Écran LCD** (16x2 ou OLED) | Affiche des messages simples : « Accès autorisé », « Empreinte refusée », « Système prêt ». | Facilite l'utilisation du dispositif sur le terrain et le débogage pendant la phase de test. Il améliore également l'ergonomie du système. |
 
----
+
 
 ## 3. 💻 Côté gestion : administration et supervision
 
@@ -76,7 +76,7 @@ Au-delà du dispositif électronique installé sur la moto, le projet nécessite
 | **Ordinateur / Serveur local** | Stocke la base de données des étudiants, des motos et des empreintes de référence. Permet d'enregistrer les nouveaux utilisateurs et de consulter l'historique des démarrages. | Le projet inclut une dimension administrative. Il faut donc un espace centralisé pour gérer les inscriptions et vérifier les autorisations. |
 | **Logiciel / Application de gestion** | Propose une interface permettant à l'administrateur d'ajouter ou de supprimer un étudiant, d'enregistrer une empreinte et de consulter les journaux d'activité (*logs*). | Sans interface, la gestion des utilisateurs serait manuelle et peu fiable. Cette application rend le système plus pratique et exploitable à l'échelle de l'ESTIM. |
 
----
+
 
 ## 4. ⚙️ Principe général de fonctionnement
 
@@ -92,7 +92,7 @@ Le système fonctionne suivant une succession d'étapes :
 6. **Alerte éventuelle :** en cas de tentative suspecte, le module GSM peut envoyer une notification au propriétaire ou à l'administrateur.
 7. **Enregistrement :** la tentative est enregistrée dans l'historique pour permettre un suivi administratif.
 
----
+
 
 ## 5. 📋 Synthèse des composants
 
