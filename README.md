@@ -368,3 +368,7 @@ Lien : [https://lucid.app/lucidchart/e7e5cc29-fe05-45e2-a3f6-14375db797c5/edit?v
 
 ### DIAGRAMME D'ACTIVITE
 Lien : https://lucid.app/lucidchart/c9e47aa7-dc15-48bb-8596-aa35e5350867/edit?viewport_loc=-2321%2C-581%2C8093%2C4283%2C0_0&invitationId=inv_c2bdfd24-8b0b-4c9b-a895-117921cf5510
+
+### DIAGRAMME DES COMPOSANTS
+
+Lien : https://lucid.app/lucidchart/c9e47aa7-dc15-48bb-8596-aa35e5350867/edit?viewport_loc=-269%2C-850%2C2100%2C1111%2CO.aQn.BFlj91&invitationId=inv_c2bdfd24-8b0b-4c9b-a895-117921cf5510
