@@ -375,12 +375,11 @@ Lien : https://lucid.app/lucidchart/c9e47aa7-dc15-48bb-8596-aa35e5350867/edit?vi
 
 
 
+#
 
+#
+#  Bonus: Chambre d'hôtel et Petit-déjeuner
 
-
-# 🏨 Résolution du problème : Chambre d'hôtel et Petit-déjeuner
-
-Cette section présente la résolution mathématique et la répartition quantifiée du coût d'une chambre d'hôtel et de son petit-déjeuner, à partir des données de l'énoncé.
 
 ## 📌 Énoncé du problème
 
@@ -389,7 +388,7 @@ Cette section présente la résolution mathématique et la répartition quantifi
 
 **Objectif :** Déterminer le prix exact de la chambre d'hôtel et celui du petit-déjeuner (répartition quantifiée).
 
----
+
 
 ## 🧮 Résolution mathématique
 
@@ -407,7 +406,7 @@ D'après l'énoncé, nous pouvons écrire les deux équations suivantes :
 ### 3. Résolution par substitution
 Nous remplaçons `y` par sa valeur (`x - 120`) dans la première équation :
 
-```text
+
 x + (x - 120) = 160
 2x - 120 = 160
 2x = 160 + 120
