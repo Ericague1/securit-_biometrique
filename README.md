@@ -1,29 +1,55 @@
  # 🔐 Système de sécurisation des motos par démarrage biométrique
 
-## 1.1 Contexte du projet
+## Contexte du projet
 L'*UNSTIM* a enregistré, en janvier 2026, 4 cas de vol de moto sur son campus. Face à cette insécurité, la présidente de l'assemblée des étudiants a lancé une compétition visant à concevoir un projet de sécurité des motos via un démarrage biométrique.
 
 ## Analyse et identification des besoins
-##   Identification des acteurs
-Acteur	Rôle
-Étudiant / Propriétaire de moto	Utilisateur principal ; enregistre son empreinte, démarre sa moto
-Présidente de l'assemblée des étudiants	Initiatrice du projet et de la compétition ; valide les projets
-Administrateur du système	Gère les comptes, les empreintes et les paramètres
-Système biométrique (capteur)	Acteur système ; capture et vérifie l'empreinte
-Agent de sécurité	Consulte les journaux de démarrage en cas d'incident
-1.3 Identification des besoins fonctionnels (BF)
-Code	Besoin fonctionnel
-BF1	Le système doit permettre à un étudiant de s'enregistrer (profil + moto)
-BF2	Le système doit permettre l'enregistrement de l'empreinte digitale du propriétaire
-BF3	Le système doit capturer l'empreinte au moment du démarrage
-BF4	Le système doit comparer l'empreinte capturée à l'empreinte de référence
-BF5	Le système doit autoriser ou refuser le démarrage du moteur
-BF6	Le système doit journaliser chaque tentative de démarrage (date, heure, résultat)
-BF7	Le système doit permettre à un administrateur de gérer les utilisateurs et les empreintes
-BF8	Le système doit gérer la compétition (inscription des projets, évaluation, classement)
-BF9	Le système doit alerter en cas de tentatives répétées échouées (tentative de vol)
+###   Identification des acteurs
+#### 1. Identification des acteurs du système
 
-## 1.4 Identification des besoins non fonctionnels (BNF)
+Les acteurs représentent les différentes entités qui interagissent directement ou indirectement avec le système de sécurisation des motos par démarrage biométrique.
+
+| **Acteur** | **Rôle** |
+|---|---|
+| **Étudiant / Propriétaire de moto** | Utilisateur principal du système. Il enregistre son empreinte digitale et utilise celle-ci pour démarrer sa moto. |
+| **Présidente de l'assemblée des étudiants** | Initiatrice du projet et de la compétition. Elle valide les projets proposés. |
+| **Administrateur du système** | Assure la gestion des comptes utilisateurs, des empreintes digitales et des paramètres du système. |
+| **Système biométrique (capteur)** | Capture et vérifie les empreintes digitales présentées lors d'une tentative de démarrage. |
+| **Agent de sécurité** | Consulte les journaux de démarrage afin de vérifier les activités et d'intervenir en cas d'incident. |
+
+
+
+#### 1.2 Identification des besoins fonctionnels (BF)
+
+Les besoins fonctionnels décrivent les différentes opérations que le système doit être capable d'effectuer pour répondre aux attentes des utilisateurs et assurer la sécurité des motos.
+
+| **Code** | **Besoin fonctionnel** |
+|---|---|
+| **BF1** | Le système doit permettre à un étudiant de s'enregistrer en renseignant son profil et les informations relatives à sa moto. |
+| **BF2** | Le système doit permettre l'enregistrement de l'empreinte digitale du propriétaire de la moto. |
+| **BF3** | Le système doit capturer l'empreinte digitale au moment où l'utilisateur tente de démarrer la moto. |
+| **BF4** | Le système doit comparer l'empreinte capturée à l'empreinte de référence enregistrée dans sa base de données. |
+| **BF5** | Le système doit autoriser ou refuser le démarrage du moteur en fonction du résultat de l'authentification biométrique. |
+| **BF6** | Le système doit enregistrer chaque tentative de démarrage en précisant la date, l'heure et le résultat de l'opération. |
+| **BF7** | Le système doit permettre à un administrateur de gérer les utilisateurs et leurs empreintes digitales. |
+| **BF8** | Le système doit permettre la gestion de la compétition, notamment l'inscription des projets, leur évaluation et l'établissement du classement. |
+| **BF9** | Le système doit déclencher une alerte en cas de tentatives répétées de démarrage échouées, pouvant indiquer une tentative de vol. |
+
+---
+
+### 📌 Synthèse
+
+L'identification des acteurs permet de déterminer les personnes et les entités qui interagissent avec le système. Quant aux besoins fonctionnels, ils définissent les services que le dispositif doit fournir.
+
+Ces deux éléments constituent une base essentielle pour la réalisation des diagrammes UML, notamment :
+
+- Le diagramme de cas d'utilisation ;
+- Le diagramme de séquence ;
+- Le diagramme de classes ;
+- Le diagramme d'activités ;
+- Le diagramme de composants.
+
+## 1.3 Identification des besoins non fonctionnels (BNF)
 ### Code	Besoin non fonctionnel
 
 BNF1	Sécurité : les empreintes doivent être chiffrées et stockées de façon sécurisée
