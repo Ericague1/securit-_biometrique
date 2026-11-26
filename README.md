@@ -12,7 +12,6 @@ Les acteurs représentent les différentes entités qui interagissent directemen
 | **Acteur** | **Rôle** |
 |---|---|
 | **Étudiant / Propriétaire de moto** | Utilisateur principal du système. Il enregistre son empreinte digitale et utilise celle-ci pour démarrer sa moto. |
-| **Présidente de l'assemblée des étudiants** | Initiatrice du projet et de la compétition. Elle valide les projets proposés. |
 | **Administrateur du système** | Assure la gestion des comptes utilisateurs, des empreintes digitales et des paramètres du système. |
 | **Système biométrique (capteur)** | Capture et vérifie les empreintes digitales présentées lors d'une tentative de démarrage. |
 | **Agent de sécurité** | Consulte les journaux de démarrage afin de vérifier les activités et d'intervenir en cas d'incident. |
